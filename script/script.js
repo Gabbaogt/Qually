@@ -10,19 +10,19 @@ function limpar(){
 function trocaImagemDireita(){
     const ima = document.querySelector("img");
     const imaTipo = ima.getAttribute("src");
-    if(imaTipo === "../imagens/logo.jpg"){
-        ima.setAttribute("src", "../imagens/Cadastro.jpg");
-    } else if(imaTipo === "../imagens/Cadastro.jpg"){
-        ima.setAttribute("src", "../imagens/Catalogo.jpg");
+    if(imaTipo === "./imagens/logo.jpg"){
+        ima.setAttribute("src", "./imagens/Cadastro.jpg");
+    } else if(imaTipo === "./imagens/Cadastro.jpg"){
+        ima.setAttribute("src", "./imagens/Catalogo.jpg");
     }
 }
 
 function trocaImagemEsquerda(){
     const ima = document.querySelector("img");
     const imaTipo = ima.getAttribute("src");
-    if(imaTipo === "../imagens/Catalogo.jpg"){
-        ima.setAttribute("src", "../imagens/Cadastro.jpg");
-    } else if(imaTipo === "../imagens/Cadastro.jpg"){
-        ima.setAttribute("src", "../imagens/logo.jpg");
+    if(imaTipo === "./imagens/Catalogo.jpg"){
+        ima.setAttribute("src", "./imagens/Cadastro.jpg");
+    } else if(imaTipo === "./imagens/Cadastro.jpg"){
+        ima.setAttribute("src", "./imagens/logo.jpg");
     }
 }
