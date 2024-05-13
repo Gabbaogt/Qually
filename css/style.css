@@ -1,0 +1,252 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Logo';
+    src: url('/fontes/Pacifico-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'texto';
+    src: url('/fontes/Rakkas-Regular.ttf');
+}
+
+/*Corpo do site*/
+body{
+    background-color: black;
+    background-image: url('../imagens/logo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 40% 100%;
+}
+/*Menu do site*/
+
+.grid-container{
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.3);
+    grid-template: 1fr / 1fr;
+    justify-content: center;
+}
+
+.grid-container nav{
+    margin: 0px;
+    padding: 0px;
+}
+
+.grid-container nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 10px;
+    list-style: none;
+    padding: 0px;
+    font-family: 'Logo', sans-serif;
+    font-size: 25px;
+}
+
+.grid-container nav ul li {
+    background-color: rgba(16, 19, 19, 0.397);
+    padding: 10px;
+    box-shadow: 4px 4px 4px black;
+    color: rgba(255, 0, 0, 0.63);
+}
+
+.grid-container nav ul li:hover {
+    background-color: rgba(55, 0, 255, 0.3);
+    cursor: pointer;
+}
+
+.grid-container nav ul li a {
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0.63);
+}
+/*Desenvolvimento do site*/
+
+
+.grid-container-desen{
+    display: grid;
+    grid-template: 1fr 1fr/ repeat(auto-fit,minmax(250px/1fr));
+    margin: -5px 10px 20px 10px;
+}
+
+.Sobre {
+    background-color: rgba(255, 255, 255, 0.3);
+    font-family: 'Logo', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.frase {
+    background-color: rgba(255, 255, 255, 0.3);
+    font-family: 'Logo', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+figure {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 90%;
+    width: 30%;
+}
+
+#imagemcentral {
+    width: 40%;
+    height: 70%;
+}
+
+
+.botao-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 10%;
+    height: 15%;
+    background-color: rgba(16, 19, 19, 0.397);
+    font-family: 'texto', sans-serif;
+    font-size: 25px;
+}
+
+.botao-imagem:hover {
+    background-color: rgba(55, 0, 255, 0.3);
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    margin-left: 0px;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.alinhmaneto {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.trocaImagem{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+@media (max-width: 500px) {
+    figure {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: rgba(255, 255, 255, 0.3);
+        height: 80%;
+        width: 80%;
+    }    
+
+    .Sobre {
+        background-color: rgba(255, 255, 255, 0.3);
+        font-family: 'Logo', sans-serif;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .frase {
+        background-color: rgba(255, 255, 255, 0.3);
+        font-family: 'Logo', sans-serif;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .informa a{
+        text-decoration: none;
+        font-family: 'Logo', sans-serif;
+        font-size: 2px;
+        position: relative;
+        bottom: 10px;
+        flex: 0 1 25%;
+        margin-left: 0px;
+        color: black;
+    }
+    
+    .informa img{
+        width: 10%;
+        height: 10%;
+        flex: 0 1 25%;
+    }
+    
+}
+/*Rodapê do site*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: relative;
+    top: 100%;
+}
+
+#contaiprinci {
+    width: 90%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+}
+
+
+.informa{
+    width: 48%;
+}
+
+.esq {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dire {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+}
+
+.informa img{
+    width: 20%;
+    height: 20%;
+    flex: 0 1 25%;
+}
+
+.informa a{
+    text-decoration: none;
+    font-family: 'Logo', sans-serif;
+    font-size: 13px;
+    position: relative;
+    bottom: 10px;
+    flex: 0 1 25%;
+    margin-left: 0px;
+    color: black;
+}
+
+.informa a:hover {
+    color: blue;
+    cursor: pointer;
+}
+
